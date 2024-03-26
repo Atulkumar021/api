@@ -7,6 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Parse JSON bodies
+app.use(cors())
 app.use(bodyParser.json());
 
 // Your RSA public key
